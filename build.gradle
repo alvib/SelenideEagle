@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id("io.qameta.allure") version "2.11.2"
+    id("io.qameta.allure-report") version "2.11.2"
+}
+
+apply plugin: "io.qameta.allure"
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation 'com.codeborne:selenide:6.18.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'com.codeborne:selenide-proxy:6.13.0'
+    implementation 'org.selenide:selenide-selenoid:2.3.5'
+    implementation 'io.qameta.allure:allure-java-commons-test:2.19.0'
+    implementation 'com.github.automatedowl:allure-environment-writer:1.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
