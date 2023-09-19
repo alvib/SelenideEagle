@@ -33,4 +33,10 @@ public class HomePageSteps extends BaseSteps {
 
         return new LoginSteps();
     }
+
+    public HomePageSteps clickDetails() {
+        clickBy(description);
+
+        return this;
+    }
 }

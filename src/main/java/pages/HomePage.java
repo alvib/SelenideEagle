@@ -16,4 +16,7 @@ public class HomePage {
 
     @Description("Кнопка открытия окна аккаунта для логина")
     public static final By signInButton = By.xpath("//button[@name='signin']");
+
+    @Description("Кнопка перехода на страницу описания")
+    public static final By description = By.xpath("//a[contains(@class, 'details-button-ember8 _button_13e4j9')]");
 }

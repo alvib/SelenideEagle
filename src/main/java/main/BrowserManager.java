@@ -1,9 +1,6 @@
 package main;
 
-import steps.HomePageSteps;
-import steps.LoginSteps;
-import steps.SearchResultsSteps;
-import steps.SearchSideBarSteps;
+import steps.*;
 
 public class BrowserManager extends BrowserManagerBase {
 
@@ -14,4 +11,6 @@ public class BrowserManager extends BrowserManagerBase {
     public final SearchResultsSteps searchResult = new SearchResultsSteps();
 
     public final LoginSteps login = new LoginSteps();
+
+    public final DetailsSteps detailsPage = new DetailsSteps();
 }
